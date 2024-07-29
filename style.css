@@ -1,0 +1,229 @@
+ /*
+Theme Name: ConceptPlan
+Author: Andrea SOARES
+Theme URI: Mise en pratique de la méthodo de Jo
+Author URI: URI: Mise en pratique de la méthodo de Jo
+Description:  Thème développé via Bootstrap 5 en license privé. Tout droit réservé.
+Version: 2.0
+Domain Path: /languages
+License: Privé
+Text Domain: ccg
+Domain Path: /languages
+*/
+
+
+h1 {
+    color: red;
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+a,
+a:hover,
+a:focus {
+    color: red; 
+    text-decoration: none; 
+}
+
+.site-footer {
+    position: relative;
+    padding-top: 20px; 
+    background-color: #A9A9A9; 
+    color: #fff; 
+    border-top: 5px solid red;
+}
+
+
+.navbar {
+    position: relative;
+    background-color: #A9A9A9; 
+    border-bottom: 5px solid red;
+}
+
+
+
+/* Style pour les liens de navigation */
+.navbar-nav .nav-link {
+    position: relative;
+    color: white; 
+    transition: color 0.3s ease-in-out; 
+}
+
+/* Couleur de survol rouge */
+.navbar-nav .nav-link:hover {
+    color: red; 
+}
+
+/* Barre rouge sous l'élément actif */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 3px; 
+    background-color: red;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Afficher la barre sous l'élément actif ou survolé */
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Style de base pour les sections avec images de fond */
+.section-background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.section-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    transition: background 0.3s ease-in-out;
+    z-index: 1; 
+}
+
+.section-background:hover::before {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.section-background h3,
+.section-background a {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    text-decoration: none;
+}
+
+.section-background a:hover {
+    color: red; 
+}
+
+/* Image de fond par défaut pour Connexion */
+.section-connexion {
+    background-image: url('images/client.webp');
+}
+
+/* Image de fond par défaut pour Inscription */
+.section-inscription {
+    background-image: url('images/tel.webp');
+}
+
+/* Formulaire de contact */
+.contact-form-button {
+    background-color: red;
+    color: white;
+    border: 3px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+}
+
+.contact-form-container {
+    position: relative;
+    padding-bottom: 60px; 
+}
+
+
+
+
+
+/* Carousele */
+.c-item {
+    position: relative;
+}
+
+.c-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.c-item .carousel-caption {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%); 
+    z-index: 1; 
+    color: white; 
+    text-align: center;
+    width: 100%; 
+    padding: 0 15px; 
+}
+
+.c-item .carousel-caption h1, .c-item .carousel-caption p {
+    margin: 0; 
+}
+
+.c-item .carousel-caption h1 {
+    margin-bottom: 15px; 
+}
+
+.c-item .carousel-caption p {
+    margin-bottom: 15px; 
+}
+
+/* Style personnalisé pour le bouton du carrousel */
+.c-item .carousel-caption .btn-primary {
+    background-color: red; 
+    border-color: red; 
+    color: white; 
+}
+
+.c-item .carousel-caption .btn-primary:hover,
+.c-item .carousel-caption .btn-primary:focus,
+.c-item .carousel-caption .btn-primary:active {
+    background-color: darkred;
+    border-color: darkred; 
+}
+
+#carouselmima {
+    border-bottom: 5px solid red; 
+}
+
+#carouselmaps {
+    position: relative;
+    border-bottom: 5px solid red;
+}
+
+/* la section des mentions légales */
+.mention-footer {
+    background-color: darkred; 
+    color: white; 
+    padding: 5px 0;
+}
+
+.mention-footer p {
+    margin-bottom: 0; 
+}
+
+.mention-footer a {
+    color: white; 
+    text-decoration: underline; 
+}
