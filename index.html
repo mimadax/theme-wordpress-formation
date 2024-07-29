@@ -1,23 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Thème WordPress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .installation, .features, .author, .license {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .screenshots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;;
+        }
+        .screenshots img {
+            width: 45%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            border: 5px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .screenshots img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>Mon Thème WordPress</h1>
-    <p>Ce thème WordPress a été développé dans le cadre de ma formation. Il est conçu pour être responsive et personnalisable.</p>
-    <h2>Installation</h2>
-    <ol>
-        <li>Téléchargez le thème depuis la section <a href="https://mimadax.github.io/theme-wordpress-formation/">Releases</a>.</li>
-        <li>Décompressez le fichier téléchargé.</li>
-        <li>Téléversez le dossier du thème dans le répertoire <code>wp-content/themes</code> de votre installation WordPress.</li>
-        <li>Activez le thème via le tableau de bord WordPress.</li>
-    </ol>
-    <h2>Fonctionnalités</h2>
-    <ul>
-        <li>Design responsive</li>
-        <li>Options de personnalisation</li>
-        <li>Support des widgets</li>
-    </ul>
+    <div class="container">
+        <h1>Mon Thème WordPress</h1>
+        <p>Ce thème WordPress a été développé dans le cadre de ma formation. Il est conçu pour être responsive et personnalisable.</p>
+        
+        <div class="installation">
+            <h2>Installation</h2>
+            <ol>
+                <li>Téléchargez le thème depuis la section <a href="https://github.com/mimadax/theme-wordpress-formation">ICI</a>.</li>
+                <li>Décompressez le fichier téléchargé.</li>
+                <li>Téléversez le dossier du thème dans le répertoire <code>wp-content/themes</code> de votre installation WordPress.</li>
+                <li>Activez le thème via le tableau de bord WordPress.</li>
+            </ol>
+        </div>
+        
+        <div class="features">
+            <h2>Fonctionnalités</h2>
+            <ul>
+                <li>Design responsive</li>
+                <li>Options de personnalisation</li>
+                <li>Support des widgets</li>
+            </ul>
+        </div>
+        
+        <div class="screenshots">
+            <div>
+            <h2>Captures d'écran</h2>
+            </div>
+            <img src="screenshots/capture1.png" alt="Capture d'écran du thème 1">
+            <img src="screenshots/capture2.png" alt="Capture d'écran du thème 2">
+            <img src="screenshots/capture3.png" alt="Capture d'écran du thème 3">
+            <img src="screenshots/capture4.png" alt="Capture d'écran du thème 4">
+        </div>
+
 </body>
 </html>
